@@ -184,8 +184,6 @@ fap_packet_t* parse_pkwdpos(char*input,int input_len){
 	}
 	else if ( packet->src_callsign )
 	{
-		if (packet->longitude&&*packet->longitude>0)
-			printf("\n\n------------------------------------\nLONGITUDE GREATER THAN ZERO!!!!\n------------------------------------\n");
 
 		NSMutableString*message=[[NSMutableString alloc] initWithCapacity:200];
 		
