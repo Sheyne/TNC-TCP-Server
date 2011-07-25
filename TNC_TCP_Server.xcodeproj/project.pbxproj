@@ -19,6 +19,7 @@
 		3655C36E13CA4480004DA800 /* D710_logger.py in Resources */ = {isa = PBXBuildFile; fileRef = 3655C36D13CA4480004DA800 /* D710_logger.py */; };
 		3683C76213C91D8700FE754D /* D710_start_stop.py in Resources */ = {isa = PBXBuildFile; fileRef = 3683C75F13C91D8700FE754D /* D710_start_stop.py */; };
 		3683C76313C91D8700FE754D /* D710_start_stop.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 3683C76013C91D8700FE754D /* D710_start_stop.pyc */; };
+		36896BED13DDE84C00775211 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 36896BEC13DDE84C00775211 /* README */; };
 		3697201613C7B01E001C3726 /* logFileReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697201513C7B01E001C3726 /* logFileReceiver.m */; };
 		3697202E13C7B2FB001C3726 /* libfap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3697202D13C7B2FB001C3726 /* libfap.dylib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -54,6 +55,7 @@
 		3655C36D13CA4480004DA800 /* D710_logger.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = D710_logger.py; sourceTree = "<group>"; };
 		3683C75F13C91D8700FE754D /* D710_start_stop.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = D710_start_stop.py; sourceTree = "<group>"; };
 		3683C76013C91D8700FE754D /* D710_start_stop.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D710_start_stop.pyc; sourceTree = "<group>"; };
+		36896BEC13DDE84C00775211 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		3697201413C7B01E001C3726 /* logFileReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logFileReceiver.h; sourceTree = "<group>"; };
 		3697201513C7B01E001C3726 /* logFileReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logFileReceiver.m; sourceTree = "<group>"; };
 		3697202D13C7B2FB001C3726 /* libfap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfap.dylib; path = usr/local/lib/libfap.dylib; sourceTree = SDKROOT; };
@@ -116,6 +118,7 @@
 		29B97314FDCFA39411CA2CEA /* TNC_TCP_Server */ = {
 			isa = PBXGroup;
 			children = (
+				36896BEC13DDE84C00775211 /* README */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -262,6 +265,7 @@
 				3683C76213C91D8700FE754D /* D710_start_stop.py in Resources */,
 				3683C76313C91D8700FE754D /* D710_start_stop.pyc in Resources */,
 				3655C36E13CA4480004DA800 /* D710_logger.py in Resources */,
+				36896BED13DDE84C00775211 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
