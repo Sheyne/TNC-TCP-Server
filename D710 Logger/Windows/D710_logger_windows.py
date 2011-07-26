@@ -26,10 +26,10 @@ elif os.name=="nt":
     except IndexError:
             print "Seial Device not connected"
     try:
-        log=open(os.path.expanduser('~')+"\\tnclogs\\tnc.log","a")
+        log=open(os.path.expanduser(os.path.join('~','tnclogs','tnc.log')),"a")
     except IOError:
-        os.mkdir(os.path.expanduser('~')+"\\tnclogs")
-        log=open(os.path.expanduser('~')+"\\tnclogs\\tnc.log","a")
+        os.mkdir(os.path.expanduser(os.path.join('~','tnclogs')))
+        log=open(os.path.expanduser(os.path.join('~','tnclogs','tnc.log')),"a")
 
 
 D710_start_stop.run_d710_tnc_startup(ser)
