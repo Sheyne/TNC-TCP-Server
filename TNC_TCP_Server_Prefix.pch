@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TNC_TCP_Server' target in the 'TNC_TCP_Server' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,7 @@
+To use first startup a connection to your radio that writes to a log file. One for the D710 has bee provided.
+
+Then launch the application.
+
+Choose a port, and a log file to watch.
+
+Your done.
