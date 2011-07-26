@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #include "/usr/local/include/fap.h"
-#import "TCP.h"
+#import <TCP/TCP.h>
 #import "ParsedPacketProtocol.h"
 #import "logFileReceiver.h"
 

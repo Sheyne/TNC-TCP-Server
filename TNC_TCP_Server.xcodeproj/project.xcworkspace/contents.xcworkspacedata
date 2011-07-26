@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../TCP/TCP.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "self:TNC_TCP_Server.xcodeproj">
    </FileRef>
 </Workspace>

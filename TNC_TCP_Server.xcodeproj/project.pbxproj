@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* TNC_TCP_ServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TNC_TCP_ServerAppDelegate.m */; };
-		3610F51813CEA2CB00FF6FD5 /* TCP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3610F51713CEA2CB00FF6FD5 /* TCP.m */; };
+		36100CF013DEF6F10003945C /* TCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36100CEF13DEF6F10003945C /* TCP.framework */; };
 		3611675313C7B6E6006FB184 /* UKFNSubscribeFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3611674B13C7B6E6006FB184 /* UKFNSubscribeFileWatcher.m */; };
 		3611675413C7B6E6006FB184 /* UKFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3611674D13C7B6E6006FB184 /* UKFileWatcher.m */; };
 		3611675513C7B6E6006FB184 /* UKKQueue Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3611674E13C7B6E6006FB184 /* UKKQueue Readme.txt */; };
@@ -38,8 +38,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		3610F51613CEA2CB00FF6FD5 /* TCP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCP.h; sourceTree = "<group>"; };
-		3610F51713CEA2CB00FF6FD5 /* TCP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCP.m; sourceTree = "<group>"; };
+		36100CEF13DEF6F10003945C /* TCP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TCP.framework; path = "../../../Library/Developer/Xcode/DerivedData/TCP-bcleghinkpmcxfbivgyjzxpnaouj/Build/Products/Debug/TCP.framework"; sourceTree = "<group>"; };
 		3611674A13C7B6E6006FB184 /* UKFNSubscribeFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKFNSubscribeFileWatcher.h; path = UKKQueue/UKFNSubscribeFileWatcher.h; sourceTree = "<group>"; };
 		3611674B13C7B6E6006FB184 /* UKFNSubscribeFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKFNSubscribeFileWatcher.m; path = UKKQueue/UKFNSubscribeFileWatcher.m; sourceTree = "<group>"; };
 		3611674C13C7B6E6006FB184 /* UKFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKFileWatcher.h; path = UKKQueue/UKFileWatcher.h; sourceTree = "<group>"; };
@@ -49,7 +48,6 @@
 		3611675013C7B6E6006FB184 /* UKKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKKQueue.m; path = UKKQueue/UKKQueue.m; sourceTree = "<group>"; };
 		3611675113C7B6E6006FB184 /* UKMainThreadProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKMainThreadProxy.h; path = UKKQueue/UKMainThreadProxy.h; sourceTree = "<group>"; };
 		3611675213C7B6E6006FB184 /* UKMainThreadProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKMainThreadProxy.m; path = UKKQueue/UKMainThreadProxy.m; sourceTree = "<group>"; };
-		3611676E13C7B772006FB184 /* TCPListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCPListener.h; path = ../VideoTransmittor/TCPListener.h; sourceTree = SOURCE_ROOT; };
 		3611685F13C7CC08006FB184 /* ParsedPacketProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsedPacketProtocol.h; sourceTree = "<group>"; };
 		3655C36813CA42CF004DA800 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 		3655C36D13CA4480004DA800 /* D710_logger.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = D710_logger.py; sourceTree = "<group>"; };
@@ -68,9 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36100CF013DEF6F10003945C /* TCP.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				3697202E13C7B2FB001C3726 /* libfap.dylib in Frameworks */,
 				3655C36913CA42CF004DA800 /* Python.framework in Frameworks */,
+				3697202E13C7B2FB001C3726 /* libfap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				3683C75D13C91D8700FE754D /* D710 Logger */,
-				3611676D13C7B772006FB184 /* TCP */,
 				36971FE613C7AF7D001C3726 /* Input Sources */,
 				256AC3D80F4B6AC300CF3369 /* TNC_TCP_ServerAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* TNC_TCP_ServerAppDelegate.m */,
@@ -150,6 +148,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36100CEF13DEF6F10003945C /* TCP.framework */,
 				3655C36813CA42CF004DA800 /* Python.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
@@ -173,17 +172,6 @@
 			);
 			name = UKKQueue;
 			sourceTree = "<group>";
-		};
-		3611676D13C7B772006FB184 /* TCP */ = {
-			isa = PBXGroup;
-			children = (
-				3610F51613CEA2CB00FF6FD5 /* TCP.h */,
-				3610F51713CEA2CB00FF6FD5 /* TCP.m */,
-				3611676E13C7B772006FB184 /* TCPListener.h */,
-			);
-			name = TCP;
-			path = ../TCP;
-			sourceTree = SOURCE_ROOT;
 		};
 		3683C75D13C91D8700FE754D /* D710 Logger */ = {
 			isa = PBXGroup;
@@ -283,7 +271,6 @@
 				3611675413C7B6E6006FB184 /* UKFileWatcher.m in Sources */,
 				3611675613C7B6E6006FB184 /* UKKQueue.m in Sources */,
 				3611675713C7B6E6006FB184 /* UKMainThreadProxy.m in Sources */,
-				3610F51813CEA2CB00FF6FD5 /* TCP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +301,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/TCP-fsziqsxxqaizssebnuxonecvddvc/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/TCP-bcleghinkpmcxfbivgyjzxpnaouj/Build/Products/Debug\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -331,6 +323,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/TCP-fsziqsxxqaizssebnuxonecvddvc/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/TCP-bcleghinkpmcxfbivgyjzxpnaouj/Build/Products/Debug\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TNC_TCP_Server_Prefix.pch;
