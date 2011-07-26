@@ -37,7 +37,7 @@ int checksumNMEA(char *packet){
 	}
 	int scanned;
 	sscanf(packet, "%x", &scanned);
-	return base+1==scanned;
+	return (base+1)==scanned;
 }
 
 int isPrefixOf(char * a, char *b){
