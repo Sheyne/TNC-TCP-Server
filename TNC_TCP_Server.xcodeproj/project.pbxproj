@@ -151,6 +151,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				36896BEC13DDE84C00775211 /* README */,
 				3683C75D13C91D8700FE754D /* D710 Logger */,
 				36971FE613C7AF7D001C3726 /* Input Sources */,
 				256AC3D80F4B6AC300CF3369 /* TNC_TCP_ServerAppDelegate.h */,
@@ -188,7 +189,6 @@
 		29B97314FDCFA39411CA2CEA /* TNC_TCP_Server */ = {
 			isa = PBXGroup;
 			children = (
-				36896BEC13DDE84C00775211 /* README */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
