@@ -1,7 +1,7 @@
-To use first startup a connection to your radio that writes to a log file. One for the D710 has bee provided.
+This project reads from a HAM radio D710 and broadcasts HAM radio packet data over a TCP socket server.
 
-Then launch the application.
+To run such the server, the D710 Python logger must be run first, compatible for both Windows and Macs,
+	it writes incoming packets to a log file.
 
-Choose a port, and a log file to watch.
-
-Your done.
+The main server can then be run, and will broadcast the packet data in a json format over the local area,
+	using a 54730-9 port.
