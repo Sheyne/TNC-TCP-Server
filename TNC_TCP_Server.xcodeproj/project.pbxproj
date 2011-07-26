@@ -22,6 +22,42 @@
 		36896BED13DDE84C00775211 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 36896BEC13DDE84C00775211 /* README */; };
 		3697201613C7B01E001C3726 /* logFileReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3697201513C7B01E001C3726 /* logFileReceiver.m */; };
 		3697202E13C7B2FB001C3726 /* libfap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3697202D13C7B2FB001C3726 /* libfap.dylib */; };
+		36C1398513DF58DF002E512D /* D710_logger_windows.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396013DF58DF002E512D /* D710_logger_windows.py */; };
+		36C1398613DF58DF002E512D /* D710_start_stop.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396113DF58DF002E512D /* D710_start_stop.pyc */; };
+		36C1398713DF58DF002E512D /* pyserial-2.5.win32.exe in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396213DF58DF002E512D /* pyserial-2.5.win32.exe */; };
+		36C1398813DF58DF002E512D /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396413DF58DF002E512D /* __init__.py */; };
+		36C1398913DF58DF002E512D /* __init__.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396513DF58DF002E512D /* __init__.pyc */; };
+		36C1398A13DF58DF002E512D /* __init__.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396613DF58DF002E512D /* __init__.pyo */; };
+		36C1398B13DF58DF002E512D /* loopback_connection.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396713DF58DF002E512D /* loopback_connection.py */; };
+		36C1398C13DF58DF002E512D /* loopback_connection.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396813DF58DF002E512D /* loopback_connection.pyc */; };
+		36C1398D13DF58DF002E512D /* loopback_connection.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396913DF58DF002E512D /* loopback_connection.pyo */; };
+		36C1398E13DF58DF002E512D /* rfc2217.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396A13DF58DF002E512D /* rfc2217.py */; };
+		36C1398F13DF58DF002E512D /* rfc2217.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396B13DF58DF002E512D /* rfc2217.pyc */; };
+		36C1399013DF58DF002E512D /* rfc2217.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396C13DF58DF002E512D /* rfc2217.pyo */; };
+		36C1399113DF58DF002E512D /* serialcli.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396D13DF58DF002E512D /* serialcli.py */; };
+		36C1399213DF58DF002E512D /* serialcli.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396E13DF58DF002E512D /* serialcli.pyc */; };
+		36C1399313DF58DF002E512D /* serialcli.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1396F13DF58DF002E512D /* serialcli.pyo */; };
+		36C1399413DF58DF002E512D /* serialjava.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397013DF58DF002E512D /* serialjava.py */; };
+		36C1399513DF58DF002E512D /* serialjava.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397113DF58DF002E512D /* serialjava.pyc */; };
+		36C1399613DF58DF002E512D /* serialjava.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397213DF58DF002E512D /* serialjava.pyo */; };
+		36C1399713DF58DF002E512D /* serialposix.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397313DF58DF002E512D /* serialposix.py */; };
+		36C1399813DF58DF002E512D /* serialposix.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397413DF58DF002E512D /* serialposix.pyc */; };
+		36C1399913DF58DF002E512D /* serialposix.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397513DF58DF002E512D /* serialposix.pyo */; };
+		36C1399A13DF58DF002E512D /* serialutil.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397613DF58DF002E512D /* serialutil.py */; };
+		36C1399B13DF58DF002E512D /* serialutil.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397713DF58DF002E512D /* serialutil.pyc */; };
+		36C1399C13DF58DF002E512D /* serialutil.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397813DF58DF002E512D /* serialutil.pyo */; };
+		36C1399D13DF58DF002E512D /* serialwin32.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397913DF58DF002E512D /* serialwin32.py */; };
+		36C1399E13DF58DF002E512D /* serialwin32.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397A13DF58DF002E512D /* serialwin32.pyc */; };
+		36C1399F13DF58DF002E512D /* serialwin32.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397B13DF58DF002E512D /* serialwin32.pyo */; };
+		36C139A013DF58DF002E512D /* sermsdos.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397C13DF58DF002E512D /* sermsdos.py */; };
+		36C139A113DF58DF002E512D /* sermsdos.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397D13DF58DF002E512D /* sermsdos.pyc */; };
+		36C139A213DF58DF002E512D /* sermsdos.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397E13DF58DF002E512D /* sermsdos.pyo */; };
+		36C139A313DF58DF002E512D /* socket_connection.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1397F13DF58DF002E512D /* socket_connection.py */; };
+		36C139A413DF58DF002E512D /* socket_connection.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1398013DF58DF002E512D /* socket_connection.pyc */; };
+		36C139A513DF58DF002E512D /* socket_connection.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1398113DF58DF002E512D /* socket_connection.pyo */; };
+		36C139A613DF58DF002E512D /* win32.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C1398213DF58DF002E512D /* win32.py */; };
+		36C139A713DF58DF002E512D /* win32.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 36C1398313DF58DF002E512D /* win32.pyc */; };
+		36C139A813DF58DF002E512D /* win32.pyo in Resources */ = {isa = PBXBuildFile; fileRef = 36C1398413DF58DF002E512D /* win32.pyo */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -57,6 +93,42 @@
 		3697201413C7B01E001C3726 /* logFileReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logFileReceiver.h; sourceTree = "<group>"; };
 		3697201513C7B01E001C3726 /* logFileReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logFileReceiver.m; sourceTree = "<group>"; };
 		3697202D13C7B2FB001C3726 /* libfap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfap.dylib; path = usr/local/lib/libfap.dylib; sourceTree = SDKROOT; };
+		36C1396013DF58DF002E512D /* D710_logger_windows.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = D710_logger_windows.py; sourceTree = "<group>"; };
+		36C1396113DF58DF002E512D /* D710_start_stop.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D710_start_stop.pyc; sourceTree = "<group>"; };
+		36C1396213DF58DF002E512D /* pyserial-2.5.win32.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pyserial-2.5.win32.exe"; sourceTree = "<group>"; };
+		36C1396413DF58DF002E512D /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		36C1396513DF58DF002E512D /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		36C1396613DF58DF002E512D /* __init__.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyo; sourceTree = "<group>"; };
+		36C1396713DF58DF002E512D /* loopback_connection.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = loopback_connection.py; sourceTree = "<group>"; };
+		36C1396813DF58DF002E512D /* loopback_connection.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = loopback_connection.pyc; sourceTree = "<group>"; };
+		36C1396913DF58DF002E512D /* loopback_connection.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = loopback_connection.pyo; sourceTree = "<group>"; };
+		36C1396A13DF58DF002E512D /* rfc2217.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rfc2217.py; sourceTree = "<group>"; };
+		36C1396B13DF58DF002E512D /* rfc2217.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = rfc2217.pyc; sourceTree = "<group>"; };
+		36C1396C13DF58DF002E512D /* rfc2217.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = rfc2217.pyo; sourceTree = "<group>"; };
+		36C1396D13DF58DF002E512D /* serialcli.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serialcli.py; sourceTree = "<group>"; };
+		36C1396E13DF58DF002E512D /* serialcli.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialcli.pyc; sourceTree = "<group>"; };
+		36C1396F13DF58DF002E512D /* serialcli.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialcli.pyo; sourceTree = "<group>"; };
+		36C1397013DF58DF002E512D /* serialjava.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serialjava.py; sourceTree = "<group>"; };
+		36C1397113DF58DF002E512D /* serialjava.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialjava.pyc; sourceTree = "<group>"; };
+		36C1397213DF58DF002E512D /* serialjava.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialjava.pyo; sourceTree = "<group>"; };
+		36C1397313DF58DF002E512D /* serialposix.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serialposix.py; sourceTree = "<group>"; };
+		36C1397413DF58DF002E512D /* serialposix.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialposix.pyc; sourceTree = "<group>"; };
+		36C1397513DF58DF002E512D /* serialposix.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialposix.pyo; sourceTree = "<group>"; };
+		36C1397613DF58DF002E512D /* serialutil.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serialutil.py; sourceTree = "<group>"; };
+		36C1397713DF58DF002E512D /* serialutil.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialutil.pyc; sourceTree = "<group>"; };
+		36C1397813DF58DF002E512D /* serialutil.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialutil.pyo; sourceTree = "<group>"; };
+		36C1397913DF58DF002E512D /* serialwin32.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serialwin32.py; sourceTree = "<group>"; };
+		36C1397A13DF58DF002E512D /* serialwin32.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialwin32.pyc; sourceTree = "<group>"; };
+		36C1397B13DF58DF002E512D /* serialwin32.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = serialwin32.pyo; sourceTree = "<group>"; };
+		36C1397C13DF58DF002E512D /* sermsdos.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sermsdos.py; sourceTree = "<group>"; };
+		36C1397D13DF58DF002E512D /* sermsdos.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = sermsdos.pyc; sourceTree = "<group>"; };
+		36C1397E13DF58DF002E512D /* sermsdos.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = sermsdos.pyo; sourceTree = "<group>"; };
+		36C1397F13DF58DF002E512D /* socket_connection.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = socket_connection.py; sourceTree = "<group>"; };
+		36C1398013DF58DF002E512D /* socket_connection.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = socket_connection.pyc; sourceTree = "<group>"; };
+		36C1398113DF58DF002E512D /* socket_connection.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = socket_connection.pyo; sourceTree = "<group>"; };
+		36C1398213DF58DF002E512D /* win32.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = win32.py; sourceTree = "<group>"; };
+		36C1398313DF58DF002E512D /* win32.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = win32.pyc; sourceTree = "<group>"; };
+		36C1398413DF58DF002E512D /* win32.pyo */ = {isa = PBXFileReference; lastKnownFileType = file; path = win32.pyo; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TNC_TCP_Server-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TNC_TCP_Server-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TNC_TCP_Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNC_TCP_Server.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,6 +248,7 @@
 		3683C75D13C91D8700FE754D /* D710 Logger */ = {
 			isa = PBXGroup;
 			children = (
+				36C1395F13DF58DF002E512D /* Windows */,
 				3655C36D13CA4480004DA800 /* D710_logger.py */,
 				3683C75F13C91D8700FE754D /* D710_start_stop.py */,
 				3683C76013C91D8700FE754D /* D710_start_stop.pyc */,
@@ -192,6 +265,57 @@
 				3697201513C7B01E001C3726 /* logFileReceiver.m */,
 			);
 			name = "Input Sources";
+			sourceTree = "<group>";
+		};
+		36C1395F13DF58DF002E512D /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				36C1396013DF58DF002E512D /* D710_logger_windows.py */,
+				36C1396113DF58DF002E512D /* D710_start_stop.pyc */,
+				36C1396213DF58DF002E512D /* pyserial-2.5.win32.exe */,
+				36C1396313DF58DF002E512D /* serial */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		36C1396313DF58DF002E512D /* serial */ = {
+			isa = PBXGroup;
+			children = (
+				36C1396413DF58DF002E512D /* __init__.py */,
+				36C1396513DF58DF002E512D /* __init__.pyc */,
+				36C1396613DF58DF002E512D /* __init__.pyo */,
+				36C1396713DF58DF002E512D /* loopback_connection.py */,
+				36C1396813DF58DF002E512D /* loopback_connection.pyc */,
+				36C1396913DF58DF002E512D /* loopback_connection.pyo */,
+				36C1396A13DF58DF002E512D /* rfc2217.py */,
+				36C1396B13DF58DF002E512D /* rfc2217.pyc */,
+				36C1396C13DF58DF002E512D /* rfc2217.pyo */,
+				36C1396D13DF58DF002E512D /* serialcli.py */,
+				36C1396E13DF58DF002E512D /* serialcli.pyc */,
+				36C1396F13DF58DF002E512D /* serialcli.pyo */,
+				36C1397013DF58DF002E512D /* serialjava.py */,
+				36C1397113DF58DF002E512D /* serialjava.pyc */,
+				36C1397213DF58DF002E512D /* serialjava.pyo */,
+				36C1397313DF58DF002E512D /* serialposix.py */,
+				36C1397413DF58DF002E512D /* serialposix.pyc */,
+				36C1397513DF58DF002E512D /* serialposix.pyo */,
+				36C1397613DF58DF002E512D /* serialutil.py */,
+				36C1397713DF58DF002E512D /* serialutil.pyc */,
+				36C1397813DF58DF002E512D /* serialutil.pyo */,
+				36C1397913DF58DF002E512D /* serialwin32.py */,
+				36C1397A13DF58DF002E512D /* serialwin32.pyc */,
+				36C1397B13DF58DF002E512D /* serialwin32.pyo */,
+				36C1397C13DF58DF002E512D /* sermsdos.py */,
+				36C1397D13DF58DF002E512D /* sermsdos.pyc */,
+				36C1397E13DF58DF002E512D /* sermsdos.pyo */,
+				36C1397F13DF58DF002E512D /* socket_connection.py */,
+				36C1398013DF58DF002E512D /* socket_connection.pyc */,
+				36C1398113DF58DF002E512D /* socket_connection.pyo */,
+				36C1398213DF58DF002E512D /* win32.py */,
+				36C1398313DF58DF002E512D /* win32.pyc */,
+				36C1398413DF58DF002E512D /* win32.pyo */,
+			);
+			path = serial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +378,42 @@
 				3683C76313C91D8700FE754D /* D710_start_stop.pyc in Resources */,
 				3655C36E13CA4480004DA800 /* D710_logger.py in Resources */,
 				36896BED13DDE84C00775211 /* README in Resources */,
+				36C1398513DF58DF002E512D /* D710_logger_windows.py in Resources */,
+				36C1398613DF58DF002E512D /* D710_start_stop.pyc in Resources */,
+				36C1398713DF58DF002E512D /* pyserial-2.5.win32.exe in Resources */,
+				36C1398813DF58DF002E512D /* __init__.py in Resources */,
+				36C1398913DF58DF002E512D /* __init__.pyc in Resources */,
+				36C1398A13DF58DF002E512D /* __init__.pyo in Resources */,
+				36C1398B13DF58DF002E512D /* loopback_connection.py in Resources */,
+				36C1398C13DF58DF002E512D /* loopback_connection.pyc in Resources */,
+				36C1398D13DF58DF002E512D /* loopback_connection.pyo in Resources */,
+				36C1398E13DF58DF002E512D /* rfc2217.py in Resources */,
+				36C1398F13DF58DF002E512D /* rfc2217.pyc in Resources */,
+				36C1399013DF58DF002E512D /* rfc2217.pyo in Resources */,
+				36C1399113DF58DF002E512D /* serialcli.py in Resources */,
+				36C1399213DF58DF002E512D /* serialcli.pyc in Resources */,
+				36C1399313DF58DF002E512D /* serialcli.pyo in Resources */,
+				36C1399413DF58DF002E512D /* serialjava.py in Resources */,
+				36C1399513DF58DF002E512D /* serialjava.pyc in Resources */,
+				36C1399613DF58DF002E512D /* serialjava.pyo in Resources */,
+				36C1399713DF58DF002E512D /* serialposix.py in Resources */,
+				36C1399813DF58DF002E512D /* serialposix.pyc in Resources */,
+				36C1399913DF58DF002E512D /* serialposix.pyo in Resources */,
+				36C1399A13DF58DF002E512D /* serialutil.py in Resources */,
+				36C1399B13DF58DF002E512D /* serialutil.pyc in Resources */,
+				36C1399C13DF58DF002E512D /* serialutil.pyo in Resources */,
+				36C1399D13DF58DF002E512D /* serialwin32.py in Resources */,
+				36C1399E13DF58DF002E512D /* serialwin32.pyc in Resources */,
+				36C1399F13DF58DF002E512D /* serialwin32.pyo in Resources */,
+				36C139A013DF58DF002E512D /* sermsdos.py in Resources */,
+				36C139A113DF58DF002E512D /* sermsdos.pyc in Resources */,
+				36C139A213DF58DF002E512D /* sermsdos.pyo in Resources */,
+				36C139A313DF58DF002E512D /* socket_connection.py in Resources */,
+				36C139A413DF58DF002E512D /* socket_connection.pyc in Resources */,
+				36C139A513DF58DF002E512D /* socket_connection.pyo in Resources */,
+				36C139A613DF58DF002E512D /* win32.py in Resources */,
+				36C139A713DF58DF002E512D /* win32.pyc in Resources */,
+				36C139A813DF58DF002E512D /* win32.pyo in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
