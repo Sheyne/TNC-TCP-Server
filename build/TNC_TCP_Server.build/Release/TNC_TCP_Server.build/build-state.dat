@@ -1,890 +1,0 @@
-TTNC_TCP_Server
-v7
-r0
-t331946278.442196
-cCheck dependencies
-cProcessInfoPlistFile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Info.plist TNC_TCP_Server-Info.plist
-cCopyStringsFile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCompileXIB /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/MainMenu.xib
-cCpResource "build/Release/TNC_TCP_Server.app/Contents/Resources/UKKQueue Readme.txt" "UKKQueue/UKKQueue Readme.txt"
-cProcessPCH /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch.gch TNC_TCP_Server_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch.gch TNC_TCP_Server_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch.gch TNC_TCP_Server_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/main.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_ServerAppDelegate.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/logFileReceiver.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFNSubscribeFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKKQueue.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKMainThreadProxy.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TCP.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server normal x86_64
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/main.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_ServerAppDelegate.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/logFileReceiver.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFNSubscribeFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKKQueue.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKMainThreadProxy.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TCP.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server normal i386
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/main.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_ServerAppDelegate.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/logFileReceiver.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFNSubscribeFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKKQueue.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKMainThreadProxy.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TCP.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cLd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server normal ppc
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004CAA740B00000000000000EE
-t1286239243
-s238
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
-c000000004C23BF2D00000000000005FF
-t1277411117
-s1535
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004C23AA0400000000000013E6
-t1277405700
-s5094
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/fcntl.h
-c000000004BBD2CE900000000000003EA
-t1270689001
-s1002
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/netdb.h
-c000000004BBD2D1D000000000000307F
-t1270689053
-s12415
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/netinet/in.h
-c000000004C2399440000000000005414
-t1277401412
-s21524
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/event.h
-c000000004C239946000000000000304A
-t1277401414
-s12362
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/socket.h
-c000000004C23994800000000000059BC
-t1277401416
-s22972
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/types.h
-c000000004C2399480000000000002905
-t1277401416
-s10501
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h
-c000000004BBD2CE9000000000000563E
-t1270689001
-s22078
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfap.dylib
-c000000004DF238F20000000000013148
-t1307719922
-s78152
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/sheyne/Dropbox/Dev/TCP/TCP.h
-c000000004DC703ED00000000000004C7
-t1304888301
-s1223
-i<Foundation/Foundation.h>
-i"TCPListener.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.h
-c000000004DC703ED00000000000004C7
-t1304888301
-s1223
-i<Foundation/Foundation.h>
-i"TCPListener.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m
-c000000004E1892EA00000000000024BA
-t1310233322
-s9402
-i"TCP.h"
-i<sys/socket.h>
-i<netinet/in.h>
-i<netdb.h>
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../VideoTransmittor/TCPListener.h
-c000000004DC7044700000000000002D1
-t1304888391
-s721
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/InfoPlist.strings
-c000000004E1777A4000000000000002D
-t1310160804
-s45
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/MainMenu.xib
-c000000004E17CF0A000000000002F048
-t1310183178
-s192584
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/ParsedPacketProtocol.h
-c000000004E189B34000000000000010F
-t1310235444
-s271
-i<Cocoa/Cocoa.h>
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.h
-c000000004E18A4B600000000000002BC
-t1310237878
-s700
-i<Cocoa/Cocoa.h>
-i"/usr/local/include/fap.h"
-i"TCP.h"
-i"ParsedPacketProtocol.h"
-i"logFileReceiver.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m
-c000000004E18E08E0000000000000828
-t1310253198
-s2088
-i"TNC_TCP_ServerAppDelegate.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server_Prefix.pch
-c000000004E1777A4000000000000009F
-t1310160804
-s159
-i<Cocoa/Cocoa.h>
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.h
-c000000004414B11D00000000000006B2
-t1142206749
-s1714
-i<Cocoa/Cocoa.h>
-i"UKFileWatcher.h"
-i<Carbon/Carbon.h>
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m
-c000000004414B23D0000000000001A29
-t1142207037
-s6697
-i"UKFNSubscribeFileWatcher.h"
-i<Carbon/Carbon.h>
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.h
-c000000004414AEAB0000000000000890
-t1142206123
-s2192
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m
-c000000004414AEBB000000000000065C
-t1142206139
-s1628
-i<Cocoa/Cocoa.h>
-i"UKFileWatcher.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue Readme.txt
-c000000004414B3D10000000000000780
-t1142207441
-s1920
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.h
-c000000004414B12100000000000014D6
-t1142206753
-s5334
-i<Foundation/Foundation.h>
-i<sys/types.h>
-i<sys/event.h>
-i"UKFileWatcher.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m
-c000000004E17BEF20000000000003A3B
-t1310179058
-s14907
-i"UKKQueue.h"
-i"UKMainThreadProxy.h"
-i<unistd.h>
-i<fcntl.h>
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.h
-c000000004414B1FA000000000000069F
-t1142206970
-s1695
-i<Cocoa/Cocoa.h>
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m
-c000000004414B1E80000000000000F4D
-t1142206952
-s3917
-i"UKMainThreadProxy.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app
-t1310253415
-s102
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app.dSYM
-t2
-s0
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Info.plist
-t1310253415
-s907
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/MacOS/TNC_TCP_Server
-t2
-s0
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/PkgInfo
-t1310253415
-s8
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1310253415
-s92
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/English.lproj/MainMenu.nib
-t1310253415
-s36610
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/UKKQueue Readme.txt
-t1310253415
-s1920
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TCP.o
-t1310253427
-s34184
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server
-t2
-s0
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server.LinkFileList
-c000000004E18E167000000000000042D
-t1310253415
-s1069
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_ServerAppDelegate.o
-t1310253426
-s26020
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFNSubscribeFileWatcher.o
-t1310253427
-s15916
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFileWatcher.o
-t1310253426
-s6656
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKKQueue.o
-t1310253427
-s24448
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKMainThreadProxy.o
-t1310253427
-s13480
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/logFileReceiver.o
-t1310253426
-s22908
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/main.o
-t1310253426
-s4848
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TCP.o
-t1310253428
-s35588
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server
-t2
-s0
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server.LinkFileList
-c000000004E18E1670000000000000425
-t1310253415
-s1061
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_ServerAppDelegate.o
-t1310253427
-s26532
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFNSubscribeFileWatcher.o
-t1310253428
-s16900
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFileWatcher.o
-t1310253428
-s6724
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKKQueue.o
-t1310253428
-s26516
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKMainThreadProxy.o
-t1310253428
-s14128
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/logFileReceiver.o
-t1310253428
-s24288
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/main.o
-t1310253427
-s4876
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TCP.o
-t1310253426
-s50504
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server
-t1310253427
-s71432
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server.LinkFileList
-c000000004E18E167000000000000043D
-t1310253415
-s1085
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_ServerAppDelegate.o
-t1310253425
-s39872
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFNSubscribeFileWatcher.o
-t1310253427
-s22020
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFileWatcher.o
-t1310253425
-s6932
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKKQueue.o
-t1310253426
-s35040
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKMainThreadProxy.o
-t1310253426
-s19064
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/logFileReceiver.o
-t1310253425
-s29008
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/main.o
-t1310253425
-s5048
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.h
-c000000004E18CBE700000000000001EF
-t1310247911
-s495
-i<Cocoa/Cocoa.h>
-i"/usr/local/include/fap.h"
-i"UKKQueue.h"
-i"ParsedPacketProtocol.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m
-c000000004E18D2F70000000000001879
-t1310249719
-s6265
-i"logFileReceiver.h"
-
-N/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m
-c000000004E1777A40000000000000104
-t1310160804
-s260
-i<Cocoa/Cocoa.h>
-
-N/usr/local/include/fap.h
-c000000004DF238F2000000000000339F
-t1307719922
-s13215
-
-N/var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch.gch
-t1310253424
-s52958992
-
-N/var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch.gch
-t1310253425
-s52823632
-
-N/var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch.gch
-t1310253425
-s55592752
-
-NTNC_TCP_Server-Info.plist
-c000000004E1777A400000000000003EA
-t1310160804
-s1002
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies331946278#331946278#0(0"0(0#1#0"8633674656#0"0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TCP.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946227.198040
-e331946227.798906
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TCP.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m331946227#331946227#0(0"0(0#0#53"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m8635570368#1647"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TCP.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_ServerAppDelegate.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946226.391651
-e331946226.642598
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_ServerAppDelegate.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m331946226#331946226#0(0"0(0#0#68"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m8618097504#1684"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_ServerAppDelegate.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFNSubscribeFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946226.608050
-e331946227.620644
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFNSubscribeFileWatcher.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m331946226#331946227#0(0"0(0#0#76"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m8637262080#1691"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFNSubscribeFileWatcher.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946226.642749
-e331946226.842314
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFileWatcher.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m331946226#331946226#0(0"0(0#0#65"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m8635695808#1669"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKFileWatcher.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKKQueue.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946226.842473
-e331946227.197888
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKKQueue.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m331946226#331946227#0(0"0(0#0#60"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m8634513056#1659"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKKQueue.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKMainThreadProxy.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946226.999744
-e331946227.211859
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKMainThreadProxy.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m331946227#331946227#0(0"0(0#0#69"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m8629345056#1677"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/UKMainThreadProxy.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/logFileReceiver.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946226.606153
-e331946226.999606
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/logFileReceiver.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m331946226#331946227#0(0"0(0#0#58"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m8638149056#1664"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/logFileReceiver.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/main.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946226.272145
-e331946226.607918
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/main.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m331946226#331946226#0(0"0(0#0#47"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m8618706016#1642"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/main.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TCP.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946228.254073
-e331946228.657262
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TCP.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m331946228#331946228#0(0"0(0#0#53"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m8628572064#1654"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TCP.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_ServerAppDelegate.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946227.459786
-e331946227.872894
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_ServerAppDelegate.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m331946227#331946227#0(0"0(0#0#68"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m8636788416#1691"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_ServerAppDelegate.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFNSubscribeFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946227.736763
-e331946228.253688
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFNSubscribeFileWatcher.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m331946227#331946228#0(0"0(0#0#76"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m8635606656#1698"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFNSubscribeFileWatcher.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946227.873049
-e331946228.019674
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFileWatcher.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m331946227#331946228#0(0"0(0#0#65"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m8637605408#1676"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKFileWatcher.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKKQueue.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946228.009728
-e331946228.419801
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKKQueue.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m331946228#331946228#0(0"0(0#0#60"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m8618132832#1666"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKKQueue.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKMainThreadProxy.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946228.019834
-e331946228.276560
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKMainThreadProxy.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m331946228#331946228#0(0"0(0#0#69"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m8617733056#1684"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/UKMainThreadProxy.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/logFileReceiver.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946227.620811
-e331946228.009568
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/logFileReceiver.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m331946227#331946228#0(0"0(0#0#58"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m8633883968#1671"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/logFileReceiver.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/main.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946227.211969
-e331946227.459621
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/main.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m331946227#331946227#0(0"0(0#0#47"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m8630188864#1649"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/main.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TCP.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946226.003542
-e331946226.605853
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TCP.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m331946226#331946226#0(0"0(0#0#53"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m8624683456#1653"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/../TCP/TCP.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TCP.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_ServerAppDelegate.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946225.620059
-e331946225.929428
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_ServerAppDelegate.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m331946225#331946225#0(0"0(0#0#68"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m8637692320#1690"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_ServerAppDelegate.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_ServerAppDelegate.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFNSubscribeFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946225.622497
-e331946227.640866
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFNSubscribeFileWatcher.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m331946225#331946227#0(0"0(0#0#76"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m8633205600#1697"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFNSubscribeFileWatcher.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFNSubscribeFileWatcher.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFileWatcher.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946225.795851
-e331946225.999647
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFileWatcher.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m331946225#331946225#0(0"0(0#0#65"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m8638209280#1675"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKFileWatcher.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKFileWatcher.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKKQueue.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946225.929597
-e331946226.391483
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKKQueue.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m: In function '-[UKKQueue removePathFromQueue:]':
-o/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m:279: warning: comparison is always false due to limited range of data type
-lSLF07#2@68"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m331946225#331946226#0(246"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m: In function '-[UKKQueue removePathFromQueue:]':/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m:279: warning: comparison is always false due to limited range of data type1(22@60"Comparison is always false due to limited range of data type331946226#110#136#0(6@60"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m331871858#279#0#279#0#0"0(0#0#60"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m8634100128#1665"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKKQueue.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKMainThreadProxy.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946225.999808
-e331946226.271767
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKMainThreadProxy.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m331946226#331946226#0(0"0(0#0#69"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m8630144928#1683"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKMainThreadProxy.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/UKMainThreadProxy.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/logFileReceiver.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946225.621194
-e331946226.003393
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/logFileReceiver.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m331946225#331946226#0(0"0(0#0#58"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m8637268800#1670"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/logFileReceiver.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/logFileReceiver.o0#
-
-CCompileC build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/main.o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946225.618600
-e331946225.795678
-r1
-xCompileC
-xbuild/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/main.o
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m331946225#331946225#0(0"0(0#0#47"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m8637952544#1648"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -include /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/main.m -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/main.o0#
-
-CCompileXIB /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/MainMenu.xib
-s331946215.653267
-e331946216.026712
-r1
-xCompileXIB
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib331946215#331946216#0(0"0(0#0#67"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/MainMenu.xib8629100832#379"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/English.lproj/MainMenu.nib /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
-
-CCopyStringsFile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s331946215.651867
-e331946215.691809
-r1
-xCopyStringsFile
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings331946215#331946215#0(0"0(0#0#72"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/English.lproj/InfoPlist.strings8629327040#378"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources/English.lproj0#
-
-CCpResource "build/Release/TNC_TCP_Server.app/Contents/Resources/UKKQueue Readme.txt" "UKKQueue/UKKQueue Readme.txt"
-s331946215.654392
-e331946215.662153
-r1
-xCpResource
-xbuild/Release/TNC_TCP_Server.app/Contents/Resources/UKKQueue Readme.txt
-xUKKQueue/UKKQueue Readme.txt
-lSLF07#2@33"Copy UKKQueue/UKKQueue Readme.txt331946215#331946215#0(0"0(0#0#69"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue Readme.txt8628838240#396"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/UKKQueue/UKKQueue Readme.txt" /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Resources0#
-
-CCreateUniversalBinary /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/MacOS/TNC_TCP_Server normal "x86_64 i386 ppc"
-r0
-
-CGenerateDSYMFile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app.dSYM /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/MacOS/TNC_TCP_Server
-r0
-
-CLd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server normal i386
-s331946278.365636
-e331946278.428241
-r0
-xLd
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server
-xnormal
-xi386
-old: warning: in /Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfap.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
-oUndefined symbols:
-o  "_fap_parseaprs", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_free", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_cleanup", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_init", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_explain_error", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-old: symbol(s) not found
-ocollect2: ld returned 1 exit status
-lSLF07#2@136"Link /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server331946278#331946278#0(844"ld: warning: in /Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfap.dylib, file was built for unsupported file format which is not the architecture being linked (i386)Undefined symbols:  "_fap_parseaprs", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_free", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_cleanup", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_init", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_explain_error", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.old: symbol(s) not foundcollect2: ld returned 1 exit status13(22@154"In /Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfap.dylib, file was built for unsupported file format which is not the architecture being linked (i386)331946278#0#168#0(6@0"331946278#0#0#0#0#0"0(4@34""_fap_parseaprs", referenced from:331946278#187#37#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#224#84#0(6@0"331946278#0#0#0#0#0"0(4@29""_fap_free", referenced from:331946278#308#32#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#340#84#0(6@0"331946278#0#0#0#0#0"0(4@32""_fap_cleanup", referenced from:331946278#424#35#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#459#84#0(6@0"331946278#0#0#0#0#0"0(4@29""_fap_init", referenced from:331946278#543#32#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#575#84#0(6@0"331946278#0#0#0#0#0"0(4@38""_fap_explain_error", referenced from:331946278#659#41#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#700#84#0(6@0"331946278#0#0#0#0#0"0(13@19"Symbol(s) not found331946278#784#24#0(6@0"331946278#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status331946278#808#36#0(6@0"331946278#0#0#0#0#0"0(0#0#0"8626000928#625"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -filelist /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -lfap -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/i386/TNC_TCP_Server1#
-
-CLd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server normal ppc
-s331946278.367956
-e331946278.442067
-r0
-xLd
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server
-xnormal
-xppc
-old: warning: in /Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfap.dylib, file was built for unsupported file format which is not the architecture being linked (ppc)
-oUndefined symbols:
-o  "_fap_parseaprs", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_free", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_cleanup", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_init", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-o  "_fap_explain_error", referenced from:
-o      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o
-old: symbol(s) not found
-ocollect2: ld returned 1 exit status
-lSLF07#2@135"Link /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server331946278#331946278#0(843"ld: warning: in /Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfap.dylib, file was built for unsupported file format which is not the architecture being linked (ppc)Undefined symbols:  "_fap_parseaprs", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_free", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_cleanup", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_init", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o  "_fap_explain_error", referenced from:      -[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.old: symbol(s) not foundcollect2: ld returned 1 exit status13(22@153"In /Developer/SDKs/MacOSX10.6.sdk/usr/local/lib/libfap.dylib, file was built for unsupported file format which is not the architecture being linked (ppc)331946278#0#167#0(6@0"331946278#0#0#0#0#0"0(4@34""_fap_parseaprs", referenced from:331946278#186#37#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#223#84#0(6@0"331946278#0#0#0#0#0"0(4@29""_fap_free", referenced from:331946278#307#32#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#339#84#0(6@0"331946278#0#0#0#0#0"0(4@32""_fap_cleanup", referenced from:331946278#423#35#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#458#84#0(6@0"331946278#0#0#0#0#0"0(4@29""_fap_init", referenced from:331946278#542#32#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#574#84#0(6@0"331946278#0#0#0#0#0"0(4@38""_fap_explain_error", referenced from:331946278#658#41#0(6@0"331946278#0#0#0#0#0"0(13@77"-[LogFileReceiver watcher:receivedNotification:forPath:] in logFileReceiver.o331946278#699#84#0(6@0"331946278#0#0#0#0#0"0(13@19"Symbol(s) not found331946278#783#24#0(6@0"331946278#0#0#0#0#0"0(13@35"Collect2: ld returned 1 exit status331946278#807#36#0(6@0"331946278#0#0#0#0#0"0(0#0#0"8618674624#622"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -filelist /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -lfap -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/ppc/TNC_TCP_Server1#
-
-CLd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server normal x86_64
-s331946227.641004
-e331946227.736600
-r1
-xLd
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server
-xnormal
-xx86_64
-lSLF07#2@138"Link /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server331946227#331946227#0(0"0(0#0#0"8641061024#631"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -filelist /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -lfap -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/Objects-normal/x86_64/TNC_TCP_Server0#
-
-CProcessInfoPlistFile /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Info.plist TNC_TCP_Server-Info.plist
-s331946215.643212
-e331946215.651713
-r1
-xProcessInfoPlistFile
-x/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Info.plist
-xTNC_TCP_Server-Info.plist
-lSLF07#2@33"Process TNC_TCP_Server-Info.plist331946215#331946215#0(0"0(0#0#66"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server-Info.plist8630505632#341"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    builtin-infoPlistUtility TNC_TCP_Server-Info.plist -genpkginfo /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch.gch TNC_TCP_Server_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s331946216.026840
-e331946225.098648
-r1
-xProcessPCH
-x/var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch.gch
-xTNC_TCP_Server_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@36"Precompile TNC_TCP_Server_Prefix.pch331946216#331946225#0(0"0(0#0#66"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server_Prefix.pch8637069536#1543"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/x86_64 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server_Prefix.pch -o /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-aryxlragaclurhhaddacvitbelec/TNC_TCP_Server_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch.gch TNC_TCP_Server_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-s331946216.028505
-e331946225.241906
-r1
-xProcessPCH
-x/var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch.gch
-xTNC_TCP_Server_Prefix.pch
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@36"Precompile TNC_TCP_Server_Prefix.pch331946216#331946225#0(0"0(0#0#66"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server_Prefix.pch8634289888#1547"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/ppc -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server_Prefix.pch -o /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-dbubtakycxrddcenqkqtxpyahmnm/TNC_TCP_Server_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch.gch TNC_TCP_Server_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s331946216.027721
-e331946225.618442
-r1
-xProcessPCH
-x/var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch.gch
-xTNC_TCP_Server_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@36"Precompile TNC_TCP_Server_Prefix.pch331946216#331946225#0(0"0(0#0#66"/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server_Prefix.pch8635659456#1539"    cd /Users/sheyne/Dropbox/Dev/TNC_TCP_Server    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-generated-files.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-own-target-headers.hmap -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-all-target-headers.hmap -iquote /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/TNC_TCP_Server-project-headers.hmap -F/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/include -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources/i386 -I/Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/TNC_TCP_Server.build/Release/TNC_TCP_Server.build/DerivedSources -c /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/TNC_TCP_Server_Prefix.pch -o /var/folders/Zp/ZpZ6g7aYG9eniGlWMNPxhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TNC_TCP_Server_Prefix-edheekvzmlijgcaxmokfzthtwmob/TNC_TCP_Server_Prefix.pch.gch0#
-
-CTouch /Users/sheyne/Dropbox/Dev/TNC_TCP_Server/build/Release/TNC_TCP_Server.app
-r0
-
