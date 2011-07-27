@@ -126,11 +126,13 @@ fap_packet_t* parse_pkwdpos(char*input,int input_len){
 @synthesize delegate;
 
 -(void)watcher:(UKKQueue*)kq receivedNotification:(NSString *)note forPath:(NSString*)path{
+	//NSLog(@"notification: %@ for path: %@",note,path);
 	FILE*fp;
 	if(!(fp=fopen([path UTF8String], "r")))
 		return;
 	if (note ==UKFileWatcherDeleteNotification) {
-		[kq addPath:path];	
+		[kq addPath:path];
+		return;
 	}
 
 	#define GEO_LOG_MAX_LINE_LENGTH 400
