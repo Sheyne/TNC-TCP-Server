@@ -9,7 +9,6 @@
 #import "logFileReceiver.h"
 
 
-
 void addFloat(NSMutableString*s, char*key, double*value){
 	[s appendFormat:@"\"%s\":%f,", key, *value];
 }
@@ -57,8 +56,29 @@ void strip(char * str){
 	str[end+1]='\0';
 }
 
-
-
+void commaLooper(char *input, void (^allblocks[])(char *)){
+	char *curr=input, *lastStop=input,*send;
+	BOOL exit=NO;
+	int idx=0;
+	while (!exit) {
+		switch (*curr) {
+			case '\0':
+				exit=1;
+			case ',':
+				send=calloc(curr-lastStop, sizeof(char));
+				memcpy(send, lastStop, (curr-lastStop)*sizeof(char));
+				send[(curr-lastStop)*sizeof(char)]='\0';
+				lastStop=curr+1;
+				if (*send!='\0')
+					allblocks[idx](send);
+				idx++;
+				break;
+			default:
+				break;
+		}
+		curr++;
+	}
+}
 
 fap_packet_t* parse_pkwdpos(char*input,int input_len){
 	fap_packet_t*result=malloc(sizeof(fap_packet_t));
@@ -76,76 +96,66 @@ fap_packet_t* parse_pkwdpos(char*input,int input_len){
 			*result->error_code=fapNMEA_INV_CKSUM;
 		}
 		
-		char lockQuality,ns,ew,check1,check2;
-		int month,day,year,hour,min;
-		double latDegs,lonDegs,latMins,lonMins,landSpeed,bearing,second,altitude;
-		const char * seperator=",";
-		char * part=strtok(input, seperator);
-		//do nothing with $PKWDPOS
-		part=strtok(NULL, seperator);
-		//take hour minute and second of UTC lock time
-		sscanf(part, "%2d%2d%lf", &hour,&min,&second);
-		part=strtok(NULL, seperator);
-		//get lock quality
-		sscanf(part, "%c", &lockQuality);
-		part=strtok(NULL, seperator);
-		//lat degrees minutes
-		sscanf(part, "%2lf%lf", &latDegs,&latMins);
-		part=strtok(NULL, seperator);
-		//lat north south
-		sscanf(part, "%c", &ns);
-		part=strtok(NULL, seperator);
-		//lon degrees minutes
-		sscanf(part, "%3lf%lf", &lonDegs,&lonMins);
-		part=strtok(NULL, seperator);
-		//lon east west
-		sscanf(part, "%c", &ew);
-		part=strtok(NULL, seperator);
-		//landspeed
-		sscanf(part, "%lf", &landSpeed);
-		part=strtok(NULL, seperator);
-		//bearing
-		sscanf(part, "%lf", &bearing);
-		part=strtok(NULL, seperator);
-		//utc month day year
-		sscanf(part, "%2d%2d%2d", &month,&day,&year);
-		part=strtok(NULL, seperator);
-		//altitude and checksum bits
-		sscanf(part, "%lf*%c%c", &altitude,&check1,&check2);
+		__block char lockQuality,ns,ew,check1,check2;
+		__block int month,day,year,hour,min;
+		__block double latDegs,lonDegs,latMins,lonMins,landSpeed,bearing,second,altitude;
+
+
 		
-		/*sscanf(input, "$PKWDPOS,%2d%2d%lf,%c,%2lf%lf,%c,%3lf%lf,%c,%lf,%lf,%2d%2d%2d,%lf*%c%c",
-			   &hour,&min,&second,&lockQuality,&latDegs,&latMins,&ns,&lonDegs,&lonMins,&ew,&landSpeed,&bearing,&month,&day,&year,&altitude,&check1,&check2);*/
-		latDegs+=latMins/60;
-		lonDegs+=lonMins/60;
-		latDegs*=ns=='N'||ns=='n'?1:-1;
-		lonDegs*=ew=='E'||ns=='e'?1:-1;
-		struct tm packetTime;
-		//years since 1900
-		packetTime.tm_year=100+year;
-		packetTime.tm_mon=month-1;
-		packetTime.tm_mday=day;
-		packetTime.tm_hour=hour;
-		packetTime.tm_min=min;
-		packetTime.tm_sec=round(second);
-		time_t pkttime=mktime(&packetTime);
-		landSpeed*=1.852;
-		unsigned int bearingInt=(int)bearing;
-		short fixStatus=lockQuality=='A';
-		result->latitude=malloc(sizeof(double));
-		result->longitude=malloc(sizeof(double));
-		result->altitude=malloc(sizeof(double));
-		result->course=malloc(sizeof(int));
-		result->speed=malloc(sizeof(double));
-		result->gps_fix_status=malloc(sizeof(short));
-		result->timestamp=malloc(sizeof(time_t));
+		void (^allblocks[])(char *)={
+			  ^(char *part){//do nothing with $PKWDPOS
+			},^(char *part){//take hour minute and second of UTC lock time
+				sscanf(part, "%2d%2d%lf", &hour,&min,&second);
+			},^(char *part){//get lock quality
+				sscanf(part, "%c", &lockQuality);
+				result->gps_fix_status=malloc(sizeof(short));
+				*(result->gps_fix_status)=lockQuality=='A';
+			},^(char *part){//lat degrees minutes
+				sscanf(part, "%2lf%lf", &latDegs,&latMins);
+			},^(char *part){//lat north south
+				sscanf(part, "%c", &ns);
+				result->latitude=malloc(sizeof(double));
+				latDegs+=latMins/60;
+				latDegs*=ns=='N'||ns=='n'?1:-1;
+				*(result->latitude)=latDegs;
+			},^(char *part){//lon degrees minutes
+				sscanf(part, "%3lf%lf", &lonDegs,&lonMins);
+			},^(char *part){//lon east west
+				sscanf(part, "%c", &ew);
+				result->longitude=malloc(sizeof(double));
+				lonDegs+=lonMins/60;
+				lonDegs*=ew=='E'||ns=='e'?1:-1;
+				*(result->longitude)=lonDegs;
+			},^(char *part){//landspeed
+				sscanf(part, "%lf", &landSpeed);
+				result->speed=malloc(sizeof(double));
+				*(result->speed)=landSpeed*1.852;
+			},^(char *part){//bearing
+				sscanf(part, "%lf", &bearing);
+				result->course=malloc(sizeof(int));
+				*(result->course)=(int)bearing;
+			},^(char *part){//utc month day year
+				sscanf(part, "%2d%2d%2d", &month,&day,&year);
+				struct tm packetTime;
+				//years since 1900
+				packetTime.tm_year=100+year;
+				packetTime.tm_mon=month-1;
+				packetTime.tm_mday=day;
+				packetTime.tm_hour=hour;
+				packetTime.tm_min=min;
+				packetTime.tm_sec=round(second);
+				result->timestamp=malloc(sizeof(time_t));
+				*(result->timestamp)=mktime(&packetTime);
+			},^(char *part){//altitude and checksum bits
+				sscanf(part, "%lf*%c%c", &altitude,&check1,&check2);
+				result->altitude=malloc(sizeof(double));
+				*(result->altitude)=altitude;
+			}
+		};
 		
-		memcpy(result->latitude,&latDegs,sizeof(double));
-		memcpy(result->longitude,&lonDegs,sizeof(double));
-		memcpy(result->altitude,&altitude,sizeof(double));
-		memcpy(result->course,&bearingInt,sizeof(int));
-		memcpy(result->speed,&landSpeed,sizeof(double));
-		memcpy(result->gps_fix_status,&fixStatus,sizeof(short));
-		memcpy(result->timestamp,&pkttime,sizeof(time_t));
+		commaLooper(input, allblocks);
+
+
 		result->path_len=0;
 	}
 	return result;
