@@ -14,7 +14,7 @@ import os
 
 if os.name=="posix":
     try:
-        ser=serial.Serial(glob("/dev/tty.PL2303-*")[0])
+        ser=serial.Serial("/dev/tty.usbserial")
     except:
         print "Error Connecting to Device"
     log=open(os.path.expanduser("~/Documents/tnc.log"),"a")

@@ -1,3 +1,5 @@
+
+
 import serial
 import datetime
 import time
@@ -5,37 +7,34 @@ import D710_start_stop
 from glob import glob
 import os
 
-"""
-	This was quickly hacked together to so that I could test some
-	theories I had with TNC. As such the code is kinda ugly, and 
-	very specific to my computer. I'll comment it where you can
-	change it to work with yours.
-"""
+"""Currently, the pyserial module is located in the same folder as the program,
+    If that is ever not the case, or must be changed, then pyserial must be installed,
+	The window's binary of which is located in the same folder as this file"""
 
-try:
-	""" My serial driver sets up a device file with the format:
-		/dev/tty.PL2303-(SOME NUMBER)
-		for each usb port I have. I am using python's unix
-		filename completing to change the star into whatever
-		number the dirver come up with.
-		
-		If you are using a windows machine the following /should/
-		work:
-		
-		ser=serial.Serial(0)
-	"""
-	ser=serial.Serial(glob("/dev/tty.PL2303-*")[0])
-except IndexError:
-	print "Seial Device not connected"
+
+if os.name=="posix":
+    try:
+        ser=serial.Serial("/dev/tty.usbserial")
+    except:
+        print "Error Connecting to Device"
+    log=open(os.path.expanduser("~/Documents/tnc.log"),"a")
+elif os.name=="nt":
+    #The best way to determine what the port is, is to open Device manager and look under COM
+    comport = raw_input("What is the name of the COM Port? (COM1, etc) ")
+    try:
+		ser=serial.Serial(comport)
+    except IndexError:
+		print "Seial Device not connected"
+    try:
+        log=open(os.path.expanduser(os.path.join('~','tnclogs','tnc.log')),"a")
+    except IOError:
+        os.mkdir(os.path.expanduser(os.path.join('~','tnclogs')))
+        log=open(os.path.expanduser(os.path.join('~','tnclogs','tnc.log')),"a")
+
+
 D710_start_stop.run_d710_tnc_startup(ser)
 
-"""Windows users may have to change that path:
-	
-	backslashes instead of forward slashes (maybe)
-	
-	And IDK if tilde (~) becomes users home folder on windows."""
-
-log=open(os.path.expanduser("~/Documents/tnc.log"),"a")
+"""Change to path of choice (Current C:\tnclogs)"""
 
 try:
 	while 1:

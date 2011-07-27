@@ -100,7 +100,7 @@ GU 1
 ##META <delay>
 #Turn off Terminal Control
 ##META <no-ctrl-c>
-TC 0"""
+#TC 0"""
 
 import time
 import serial

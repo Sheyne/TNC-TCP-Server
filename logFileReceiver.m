@@ -18,7 +18,7 @@ void addString(NSMutableString*s, char*key, char*value){
 }
 
 int checksumNMEA(char *packet){
-	int base;
+	int base=0;
 	short done=0,start=0;
 	while (!done) {
 		switch (*packet) {
@@ -37,7 +37,7 @@ int checksumNMEA(char *packet){
 	}
 	int scanned;
 	sscanf(packet, "%x", &scanned);
-	return (base+1)==scanned;
+	return base==scanned;
 }
 
 int isPrefixOf(char * a, char *b){
@@ -56,6 +56,7 @@ void strip(char * str){
 		end--;
 	str[end+1]='\0';
 }
+
 
 
 
@@ -78,8 +79,42 @@ fap_packet_t* parse_pkwdpos(char*input,int input_len){
 		char lockQuality,ns,ew,check1,check2;
 		int month,day,year,hour,min;
 		double latDegs,lonDegs,latMins,lonMins,landSpeed,bearing,second,altitude;
-		sscanf(input, "$PKWDPOS,%2d%2d%lf,%c,%2lf%lf,%c,%3lf%lf,%c,%lf,%lf,%2d%2d%2d,%lf*%c%c",
-			   &hour,&min,&second,&lockQuality,&latDegs,&latMins,&ns,&lonDegs,&lonMins,&ew,&landSpeed,&bearing,&month,&day,&year,&altitude,&check1,&check2);
+		const char * seperator=",";
+		char * part=strtok(input, seperator);
+		//do nothing with $PKWDPOS
+		part=strtok(NULL, seperator);
+		//take hour minute and second of UTC lock time
+		sscanf(part, "%2d%2d%lf", &hour,&min,&second);
+		part=strtok(NULL, seperator);
+		//get lock quality
+		sscanf(part, "%c", &lockQuality);
+		part=strtok(NULL, seperator);
+		//lat degrees minutes
+		sscanf(part, "%2lf%lf", &latDegs,&latMins);
+		part=strtok(NULL, seperator);
+		//lat north south
+		sscanf(part, "%c", &ns);
+		part=strtok(NULL, seperator);
+		//lon degrees minutes
+		sscanf(part, "%3lf%lf", &lonDegs,&lonMins);
+		part=strtok(NULL, seperator);
+		//lon east west
+		sscanf(part, "%c", &ew);
+		part=strtok(NULL, seperator);
+		//landspeed
+		sscanf(part, "%lf", &landSpeed);
+		part=strtok(NULL, seperator);
+		//bearing
+		sscanf(part, "%lf", &bearing);
+		part=strtok(NULL, seperator);
+		//utc month day year
+		sscanf(part, "%2d%2d%2d", &month,&day,&year);
+		part=strtok(NULL, seperator);
+		//altitude and checksum bits
+		sscanf(part, "%lf*%c%c", &altitude,&check1,&check2);
+		
+		/*sscanf(input, "$PKWDPOS,%2d%2d%lf,%c,%2lf%lf,%c,%3lf%lf,%c,%lf,%lf,%2d%2d%2d,%lf*%c%c",
+			   &hour,&min,&second,&lockQuality,&latDegs,&latMins,&ns,&lonDegs,&lonMins,&ew,&landSpeed,&bearing,&month,&day,&year,&altitude,&check1,&check2);*/
 		latDegs+=latMins/60;
 		lonDegs+=lonMins/60;
 		latDegs*=ns=='N'||ns=='n'?1:-1;
@@ -163,6 +198,7 @@ fap_packet_t* parse_pkwdpos(char*input,int input_len){
 	
 	char *GPRMC_PACKET_CALLSIGN="D710";
 	
+	
 	if (isPrefixOf("$PKWDPOS", buff)) {
 		//PKWDPOS is not recognized by libfap. It is very simple and very similar 
 		//GPRMC. I wrote my own parser `parse_pkwdpos'.
@@ -186,7 +222,7 @@ fap_packet_t* parse_pkwdpos(char*input,int input_len){
 	}
 	else if ( packet->src_callsign )
 	{
-
+	
 		NSMutableString*message=[[NSMutableString alloc] initWithCapacity:200];
 		
 		[message appendFormat:@"{\"%s\":{",packet->src_callsign];
