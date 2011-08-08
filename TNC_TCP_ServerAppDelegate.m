@@ -20,9 +20,6 @@
 
 -(BOOL)onSocketWillConnect:(AsyncSocket *)sock{
 	NSLog(@"accepting connection on socket: %@", sock.connectedHost);
-	if ([sock canSafelySetDelegate]) {
-		sock.delegate=self;
-	}
 	[sockets addObject:sock];
 	[sock writeData:self.lastSent withTimeout:-1 tag:PRIVATE_TAG];
 	return YES;
