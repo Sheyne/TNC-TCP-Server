@@ -8,6 +8,8 @@
 
 #import "TNC_TCP_ServerAppDelegate.h"
 
+#define MAIN_TAG 98473
+
 @implementation TNC_TCP_ServerAppDelegate
 
 @synthesize window;
@@ -18,8 +20,13 @@
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
 	if ([keyPath isEqualToString:@"port"]) {
 		NSLog(@"setting port to: %d",self.port);
-		[connection send:[[NSString stringWithFormat:@"{\"Port change notification\":%d}\n",self.port]dataUsingEncoding:NSASCIIStringEncoding]];
-		[connection listenOnPort:self.port];
+		[connection writeData:[[NSString stringWithFormat:@"{\"Port change notification\":%d}\n",self.port]dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:MAIN_TAG];
+		[connection disconnectAfterWriting];
+		NSError * err;
+		[connection acceptOnPort:self.port error:&err];
+		if (err) {
+			NSLog(@"Error changing port: %@", err);
+		}
 	}
 	if ([keyPath isEqualToString:@"logfile"]) {
 		NSLog(@"setting logfile from: %@ to: %@",[change valueForKey:@"old"],self.logfile);
@@ -33,9 +40,7 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	connection=[[TCP alloc]init];
-	connection.delegate=self;
-	connection.repeatMode=YES;
+	connection=[[AsyncSocket alloc]initWithDelegate:self];
 	recvr=[[LogFileReceiver alloc]init];
 	recvr.delegate=self;
 	queue=[[UKKQueue alloc] init];
@@ -47,18 +52,11 @@
 	self.logfile=[@"~/Documents/tnc.log" stringByExpandingTildeInPath];
 }
 
--(void)connectionReceived:(CFSocketRef)socket{
-	NSLog(@"Connection received,");
-	if (self.lastSent){
-		NSLog(@"\tsending: %s",self.lastSent.bytes);
-		NSLog(@"%s",self.lastSent.bytes);
-	}
-}
 -(void)gotParsedPacket:(NSString*)msg{
 	self.lastSent=[msg dataUsingEncoding:NSASCIIStringEncoding];
 	if (self.lastSent){
 		NSLog(@"sending: %s",self.lastSent.bytes);
-		[connection send:self.lastSent];
+		[connection writeData:self.lastSent withTimeout:-1 tag:MAIN_TAG];
 	}
 }
 

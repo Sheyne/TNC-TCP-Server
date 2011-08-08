@@ -6,15 +6,16 @@
 //  Copyright 2011 Sheyne Anderson. All rights reserved.
 //
 
+#import "AsyncSocket.h"
+
 #import <Cocoa/Cocoa.h>
 #include "/usr/local/include/fap.h"
-#import <TCP/TCP.h>
 #import "ParsedPacketProtocol.h"
 #import "logFileReceiver.h"
 
-@interface TNC_TCP_ServerAppDelegate : NSObject <TCPListener,NSApplicationDelegate,ParsedPacketProtocol> {
+@interface TNC_TCP_ServerAppDelegate : NSObject <AsyncSocketDelegate,NSApplicationDelegate,ParsedPacketProtocol> {
     NSWindow *window;
-	TCP *connection;
+	AsyncSocket *connection;
 	LogFileReceiver *recvr;
 	NSData *lastSent;
 	UKKQueue *queue;
