@@ -16,11 +16,23 @@
 @interface TNC_TCP_ServerAppDelegate : NSObject <AsyncSocketDelegate,NSApplicationDelegate,ParsedPacketProtocol> {
     NSWindow *window;
 	AsyncSocket *connection;
+	
+	//delegate for notifications that the logfile has been changed
 	LogFileReceiver *recvr;
+	
+	//the most recent packet (for new connections)
 	NSData *lastSent;
-	UKKQueue *queue;
+	
+	//the port to listen on
 	int port;
+	
+	//deals with watching the logfile
+	UKKQueue *queue;
+	
+	//the set of all sockets that are currently connected to the server
 	NSMutableSet *sockets;
+	
+	//location of the logfile to watch
 	NSString *logfile;
 }
 
