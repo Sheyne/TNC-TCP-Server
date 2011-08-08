@@ -20,9 +20,9 @@
 	NSData *lastSent;
 	UKKQueue *queue;
 	int port;
+	NSMutableSet *sockets;
 	NSString *logfile;
 }
-
 
 @property (copy) NSData *lastSent;
 @property (assign) IBOutlet NSWindow *window;
