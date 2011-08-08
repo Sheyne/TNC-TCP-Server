@@ -48,14 +48,18 @@
 }
 
 -(void)connectionReceived:(CFSocketRef)socket{
-	NSLog(@"Connection received, sending: %@",self.lastSent);
-	if (self.lastSent)
-		[connection send:[self.lastSent dataUsingEncoding:NSASCIIStringEncoding] socket:socket];
+	NSLog(@"Connection received,");
+	if (self.lastSent){
+		NSLog(@"\tsending: %s",self.lastSent.bytes);
+		NSLog(@"%s",self.lastSent.bytes);
+	}
 }
 -(void)gotParsedPacket:(NSString*)msg{
-	self.lastSent=msg;
-	NSLog(@"sending: %@",self.lastSent);
-	[connection send:[self.lastSent dataUsingEncoding:NSASCIIStringEncoding]];
+	self.lastSent=[msg dataUsingEncoding:NSASCIIStringEncoding];
+	if (self.lastSent){
+		NSLog(@"sending: %s",self.lastSent.bytes);
+		[connection send:self.lastSent];
+	}
 }
 
 @end

@@ -16,14 +16,14 @@
     NSWindow *window;
 	TCP *connection;
 	LogFileReceiver *recvr;
-	NSString *lastSent;
+	NSData *lastSent;
 	UKKQueue *queue;
 	int port;
 	NSString *logfile;
 }
 
 
-@property (copy) NSString*lastSent;
+@property (copy) NSData *lastSent;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) int port;
 @property (retain) NSString *logfile;

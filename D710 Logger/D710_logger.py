@@ -17,6 +17,8 @@ if os.name=="posix":
         ser=serial.Serial("/dev/tty.usbserial")
     except:
         print "Error Connecting to Device"
+        import sys
+        sys.exit()
     log=open(os.path.expanduser("~/Documents/tnc.log"),"a")
 elif os.name=="nt":
     #The best way to determine what the port is, is to open Device manager and look under COM
