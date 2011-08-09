@@ -28,7 +28,7 @@
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
 	if ([keyPath isEqualToString:@"port"]) {
 		NSLog(@"setting port to: %d",self.port);
-		[connection writeData:[[NSString stringWithFormat:@"{\"Port change notification\":%d}\n",self.port]dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:MAIN_TAG];
+		[connection writeData:[[NSString stringWithFormat:@"{\"Port change notification\":%d}\r\n",self.port]dataUsingEncoding:NSASCIIStringEncoding] withTimeout:-1 tag:MAIN_TAG];
 		//eventually use disconnect after writing
 		
 		[connection disconnect];
@@ -65,7 +65,7 @@
 
 
 -(void)gotParsedPacket:(NSString*)msg{
-	self.lastSent=[msg dataUsingEncoding:NSASCIIStringEncoding];
+	self.lastSent=[[msg stringByAppendingString:@"\r\n"] dataUsingEncoding:NSASCIIStringEncoding];
 	if (self.lastSent){
 		NSLog(@"sending: %s",self.lastSent.bytes);
 		for (AsyncSocket *sock in sockets) {
