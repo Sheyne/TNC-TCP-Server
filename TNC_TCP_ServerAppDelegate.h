@@ -9,7 +9,7 @@
 #import "AsyncSocket.h"
 
 #import <Cocoa/Cocoa.h>
-#include "/usr/local/include/fap.h"
+#include "fap.h"
 #import "ParsedPacketProtocol.h"
 #import "logFileReceiver.h"
 
@@ -34,12 +34,17 @@
 	
 	//location of the logfile to watch
 	NSString *logfile;
+	
+	//title of the connect disconnect button
+	NSString *_connection_is_connected;
 }
 
 @property (copy) NSData *lastSent;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) int port;
 @property (retain) NSString *logfile;
-
+@property (retain) AsyncSocket *connection;
+@property (assign) NSString *isConnected;
+-(IBAction)acceptConnections:(id)sender;
 
 @end

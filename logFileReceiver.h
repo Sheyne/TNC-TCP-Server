@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#include "/usr/local/include/fap.h"
+#include "fap.h"
 #import "UKKQueue.h"
 #import "ParsedPacketProtocol.h"
 
